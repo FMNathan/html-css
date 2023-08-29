@@ -1,0 +1,23 @@
+*{
+       background-color: #235789;
+
+}
+
+.main-gallery{
+       display: flex;
+       height: 40rem;       
+       gap: 2rem;
+}
+
+.main-gallery > div{
+       flex: 1;
+       border-radius: 60px;
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: auto 100%;
+       transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.main-gallery > div:hover{
+       flex: 5;
+}
