@@ -5,11 +5,13 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Media Query</title>
        <link rel="stylesheet" href="estilos/style.css">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
        <header>
               <h1>Conhecendo meus Mains</h1>
-              <menu>
+              <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+              <menu id="champs">
                      <ul>
                             <li><a href="https://www.leagueoflegends.com/pt-br/champions/viego/" target="_blank">Viego</a></li>
                             <li><a href="https://www.leagueoflegends.com/pt-br/champions/ekko/" target="_blank">Ekko</a></li>
@@ -35,5 +37,14 @@
 
               </article>
        </main>
+       <script>
+              function clickMenu(){
+                     if (champs.style.display == 'block') {
+                            champs.style.display = 'none'
+                     } else {
+                            champs.style.display ='block'
+                     }
+              }
+       </script>
 </body>
 </html>
