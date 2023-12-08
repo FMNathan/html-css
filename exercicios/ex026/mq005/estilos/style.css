@@ -8,6 +8,12 @@
 
 body, html{
        background-color: #25C9C1;
+       background-image: url(../imagens/background-site.jpg);
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+       height: 100vh;
 }
 
 header{
