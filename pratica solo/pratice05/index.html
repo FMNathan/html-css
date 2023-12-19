@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+       <link rel="stylesheet" href="./css/style.css">
+       <title>Relógio Digital</title>
+</head>
+<body>
+        <div class="clock">
+              <div>
+                     <span id="hours">00</span>
+                     <span class="time">Horas</span>
+              </div>
+
+              <div>
+                     <span id="minutes">00</span>
+                     <span class="time">Minutos</span>
+              </div>
+
+              <div>
+                     <span id="seconds">00</span>
+                     <span class="time">Segundos</span>
+              </div>
+        </div> 
+        <script>
+              const hours = document.getElementById('hours');
+              const minutes = document.getElementById('minutes');
+              const seconds = document.getElementById('seconds');
+
+              const clock = setInterval(function time () {
+              let dateToday = new Date ();
+              let hr = dateToday.getHours();
+              let min = dateToday.getMinutes();
+              let sec = dateToday.getSeconds();
+
+              if (hr < 10) hr = '0' + hr;
+
+              if (min < 10) min = '0' + min;
+
+              if (sec < 10) sec = '0' + sec;
+
+              hours.textContent = hr;
+              minutes.textContent = min;
+              seconds.textContent = sec;
+})
+        </script>
+</body>
+</html>
