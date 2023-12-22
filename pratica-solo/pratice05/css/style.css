@@ -46,4 +46,27 @@ body{
 
 .clock span.time{
        font-size: 20px;
+
+
+}
+@media (max-width: 600px){
+       div.clock{
+              width: 90vw;
+              gap: 3px;
+       }
+       body{
+              background: #575366;
+       }
+}
+
+@media(min-width:600px){ 
+       div.clock{
+             width: 480px;
+      }
+}
+
+@media(min-width: 992px){
+       div.clock{
+              width: 550px;
+       }
 }
