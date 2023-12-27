@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-@media screen and (max-widht: 600px){
+@media only screen and (max-width: 600px){
        i#burguer{
-              display: none;
+              display: block;
        }
 
        menu{
@@ -10,18 +10,20 @@
        }
 
        main{
-              width: 300px;
+              width: 80vw;
+              background-position: left center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: fixed;
        }
-       img{
-              width: 100%;
-       }
+       
 
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 600px){
        i#burguer{
-              display: none;
+              display: block;
        }
 
        menu{
@@ -29,10 +31,29 @@
        }
 
        main{
-              width: 700px;
-       }
-       img{
-              width: 100%;
-       }
+              width: 90vw;
+              background-position: right center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: fixed;
        }
 
+}
+
+@media screen and (min-width: 768px) {
+       i#burguer{
+              display: none;
+       }
+       menu{
+              display: block;
+       }
+       main{
+              
+              width: 90vw;
+              background-position: bottom;
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-attachment: fixed;
+       }
+       
+}
